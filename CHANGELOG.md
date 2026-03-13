@@ -1,3 +1,10 @@
+# 1.0.0 (2026-03-13)
+
+
+### Features
+
+* 初始化 Next.js SaaS 项目基础结构 ([f292887](https://github.com/xqing7985/simplequant-ai/commit/f292887c01bb50bbd0cfe6ef7c0784c1de354bc2))
+
 ## [1.7.7](https://github.com/ixartz/SaaS-Boilerplate/compare/v1.7.6...v1.7.7) (2025-12-12)
 
 
