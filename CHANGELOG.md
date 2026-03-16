@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/xqing7985/simplequant-ai/compare/v1.0.0...v1.1.0) (2026-03-16)
+
+
+### Features
+
+* **blog:** 实现博客功能模块 ([b4f0b8e](https://github.com/xqing7985/simplequant-ai/commit/b4f0b8e622b15780afb301128360df89a3007f3c))
+
 # 1.0.0 (2026-03-13)
 
 
