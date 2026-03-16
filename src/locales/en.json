@@ -163,5 +163,12 @@
     "message_title": "Message",
     "message_description": "Enter a detailed message for your todo.",
     "submit_button": "Submit"
+  },
+  "Data": {
+    "meta_title": "Data Center",
+    "meta_description": "Download sample data for quantitative research and analysis",
+    "page_title": "Data Center",
+    "page_description": "Download sample data for quantitative research, including daily market data, fundamental indicators, and factor data",
+    "download": "Download"
   }
 }

@@ -1,8 +1,17 @@
+'use client';
+
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import * as React from 'react';
 
 import { LocaleSwitcher } from '@/components/LocaleSwitcher';
 import { buttonVariants } from '@/components/ui/buttonVariants';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 import { CenteredMenu } from '@/features/landing/CenteredMenu';
 import { Section } from '@/features/landing/Section';
 
@@ -32,9 +41,7 @@ export const Navbar = () => {
           </>
         )}
       >
-        <li>
-          <Link href="/sign-up">{t('product')}</Link>
-        </li>
+        <ProductDropdown />
 
         <li>
           <Link href="/sign-up">{t('docs')}</Link>
@@ -55,3 +62,36 @@ export const Navbar = () => {
     </Section>
   );
 };
+
+function ProductDropdown() {
+  const [open, setOpen] = React.useState(false);
+  const t = useTranslations('Navbar');
+
+  return (
+    <DropdownMenu open={open} onOpenChange={setOpen}>
+      <DropdownMenuTrigger
+        asChild
+        onMouseEnter={() => setOpen(true)}
+        onMouseLeave={() => setOpen(false)}
+      >
+        <li className="cursor-pointer">
+          <span className="text-lg font-medium opacity-60 transition-opacity hover:opacity-100">
+            {t('product')}
+          </span>
+        </li>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent
+        align="start"
+        className="min-w-[160px]"
+        onMouseEnter={() => setOpen(true)}
+        onMouseLeave={() => setOpen(false)}
+      >
+        <DropdownMenuItem asChild className="cursor-pointer">
+          <Link href="/data" className="flex w-full items-center py-2">
+            数据
+          </Link>
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  );
+}
