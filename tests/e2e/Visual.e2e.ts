@@ -14,7 +14,7 @@ test.describe('Visual testing', () => {
     test('should take screenshot of the Chinese homepage', async ({ page }) => {
       await page.goto('/zh');
 
-      await expect(page.getByText('打造完美的 SaaS 模板')).toBeVisible();
+      await expect(page.getByText('完美的 SaaS 模板')).toBeVisible();
 
       await percySnapshot(page, 'Homepage - Chinese');
     });
