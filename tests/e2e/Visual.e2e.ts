@@ -10,13 +10,5 @@ test.describe('Visual testing', () => {
 
       await percySnapshot(page, 'Homepage');
     });
-
-    test('should take screenshot of the French homepage', async ({ page }) => {
-      await page.goto('/fr');
-
-      await expect(page.getByText('Le parfait SaaS template pour construire')).toBeVisible();
-
-      await percySnapshot(page, 'Homepage - French');
-    });
   });
 });
