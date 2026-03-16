@@ -10,5 +10,13 @@ test.describe('Visual testing', () => {
 
       await percySnapshot(page, 'Homepage');
     });
+
+    test('should take screenshot of the Chinese homepage', async ({ page }) => {
+      await page.goto('/zh');
+
+      await expect(page.getByText('打造完美的 SaaS 模板')).toBeVisible();
+
+      await percySnapshot(page, 'Homepage - Chinese');
+    });
   });
 });
