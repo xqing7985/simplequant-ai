@@ -70,4 +70,19 @@
   * {
     @apply border-border;
   }
+
+  /* Typography plugin styles for blog content */
+  .prose {
+    --tw-prose-body: hsl(var(--foreground));
+    --tw-prose-headings: hsl(var(--foreground));
+    --tw-prose-links: hsl(var(--primary));
+    --tw-prose-code: hsl(var(--foreground));
+  }
+
+  .dark .prose {
+    --tw-prose-body: hsl(var(--foreground));
+    --tw-prose-headings: hsl(var(--foreground));
+    --tw-prose-links: hsl(var(--primary));
+    --tw-prose-code: hsl(var(--foreground));
+  }
 }
