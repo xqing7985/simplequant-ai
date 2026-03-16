@@ -164,6 +164,21 @@
     "message_description": "Enter a detailed message for your todo.",
     "submit_button": "Submit"
   },
+  "Blog": {
+    "meta_title": "Blog",
+    "meta_description": "Latest articles and insights",
+    "page_title": "Blog",
+    "page_description": "Sharing insights on quantitative investing, market analysis, and investment thoughts",
+    "read_more": "Read more",
+    "back_to_list": "Back to list",
+    "published_on": "Published on",
+    "report_badge": "Report",
+    "report_source": "Source",
+    "report_author": "Author",
+    "report_date": "Date",
+    "view_pdf": "View PDF",
+    "download_pdf": "Download PDF"
+  },
   "Data": {
     "meta_title": "Data Center",
     "meta_description": "Download sample data for quantitative research and analysis",

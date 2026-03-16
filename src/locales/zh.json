@@ -171,7 +171,13 @@
     "page_description": "分享关于量化投资、市场分析和投资心得",
     "read_more": "阅读全文",
     "back_to_list": "返回文章列表",
-    "published_on": "发表于"
+    "published_on": "发表于",
+    "report_badge": "研报",
+    "report_source": "来源机构",
+    "report_author": "作者",
+    "report_date": "研报日期",
+    "view_pdf": "查看 PDF",
+    "download_pdf": "下载 PDF"
   },
   "Data": {
     "meta_title": "数据中心",

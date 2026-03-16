@@ -24,6 +24,12 @@ export const BlogCard = ({ post }: BlogCardProps) => {
 
       <div className="flex flex-col gap-4 p-6">
         <div className="flex flex-wrap gap-2">
+          {/* 研报类型标识 */}
+          {post.contentType === 'report' && (
+            <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">
+              {t('report_badge')}
+            </span>
+          )}
           {post.tags.map((tag, index) => (
             <span
               key={index}

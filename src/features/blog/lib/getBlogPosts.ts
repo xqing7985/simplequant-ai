@@ -41,6 +41,12 @@ export async function getBlogPosts(locale: string): Promise<BlogPost[]> {
         coverImage: frontmatter.coverImage,
         locale,
         isPublished: frontmatter.isPublished,
+        // 研报相关字段
+        contentType: frontmatter.contentType,
+        pdfUrl: frontmatter.pdfUrl,
+        reportSource: frontmatter.reportSource,
+        reportAuthor: frontmatter.reportAuthor,
+        reportDate: frontmatter.reportDate,
       });
     }
   }
@@ -84,6 +90,12 @@ export async function getBlogPostBySlug(
     locale,
     isPublished: frontmatter.isPublished,
     content: body,
+    // 研报相关字段
+    contentType: frontmatter.contentType,
+    pdfUrl: frontmatter.pdfUrl,
+    reportSource: frontmatter.reportSource,
+    reportAuthor: frontmatter.reportAuthor,
+    reportDate: frontmatter.reportDate,
   };
 }
 
