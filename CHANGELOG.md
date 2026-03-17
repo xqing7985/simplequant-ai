@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/xqing7985/simplequant-ai/compare/v1.1.1...v1.2.0) (2026-03-17)
+
+
+### Features
+
+* **blog:** 添加国联基金AI量化研报博客文章 ([0a36a08](https://github.com/xqing7985/simplequant-ai/commit/0a36a0857b7cf0a663d258aaca4539d34687419f))
+
 ## [1.1.1](https://github.com/xqing7985/simplequant-ai/compare/v1.1.0...v1.1.1) (2026-03-17)
 
 
