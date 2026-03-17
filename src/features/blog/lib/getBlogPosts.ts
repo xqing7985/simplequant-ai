@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 import matter from 'gray-matter';
+import { cache } from 'react';
 
 import type { BlogPost, BlogPostFrontmatter } from '@/features/blog/types/blog';
 
@@ -10,7 +11,7 @@ const blogDirectory = path.join(process.cwd(), 'content/blog');
 /**
  * 获取指定语言的所有博客文章
  */
-export async function getBlogPosts(locale: string): Promise<BlogPost[]> {
+export const getBlogPosts = cache(async (locale: string): Promise<BlogPost[]> => {
   const localeDir = path.join(blogDirectory, locale);
 
   // 如果目录不存在，返回空数组
@@ -55,15 +56,15 @@ export async function getBlogPosts(locale: string): Promise<BlogPost[]> {
   return posts.sort((a, b) =>
     new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
   );
-}
+});
 
 /**
  * 获取指定 slug 的博客文章详情
  */
-export async function getBlogPostBySlug(
+export const getBlogPostBySlug = cache(async (
   slug: string,
   locale: string,
-): Promise<BlogPost | null> {
+): Promise<BlogPost | null> => {
   const localeDir = path.join(blogDirectory, locale);
   const filePath = path.join(localeDir, `${slug}.mdx`);
 
@@ -97,7 +98,7 @@ export async function getBlogPostBySlug(
     reportAuthor: frontmatter.reportAuthor,
     reportDate: frontmatter.reportDate,
   };
-}
+});
 
 /**
  * 获取所有可用的 slug（用于 generateStaticParams）

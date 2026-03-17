@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
 import type { BlogPost } from '@/features/blog/types/blog';
@@ -10,12 +11,14 @@ type BlogArticleProps = {
 
 export const BlogArticle = ({ post, content }: BlogArticleProps) => {
   const t = useTranslations('Blog');
+  const params = useParams<{ locale: string }>();
+  const locale = params?.locale || 'zh';
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-8">
       <header className="mb-8">
         <Link
-          href="/blog"
+          href={`/${locale}/blog`}
           className="mb-6 inline-flex items-center text-sm text-purple-600 hover:text-purple-500"
         >
           <svg
@@ -186,7 +189,7 @@ export const BlogArticle = ({ post, content }: BlogArticleProps) => {
 
       <footer className="mt-12 border-t border-border pt-8">
         <Link
-          href="/blog"
+          href={`/${locale}/blog`}
           className="inline-flex items-center text-sm text-purple-600 hover:text-purple-500"
         >
           <svg

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import * as React from 'react';
 
@@ -19,6 +20,8 @@ import { Logo } from './Logo';
 
 export const Navbar = () => {
   const t = useTranslations('Navbar');
+  const params = useParams<{ locale: string }>();
+  const locale = params?.locale || 'zh';
 
   return (
     <Section className="px-3 py-6">
@@ -48,7 +51,7 @@ export const Navbar = () => {
         </li>
 
         <li>
-          <Link href="/blog">{t('blog')}</Link>
+          <Link href={`/${locale}/blog`}>{t('blog')}</Link>
         </li>
 
         <li>
