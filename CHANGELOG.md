@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/xqing7985/simplequant-ai/compare/v1.1.0...v1.1.1) (2026-03-17)
+
+
+### Bug Fixes
+
+* **blog:** 修复博客链接缺少语言前缀的问题 ([12007fe](https://github.com/xqing7985/simplequant-ai/commit/12007fe2710e5a5a156a26dd6ce33964db5c45a7))
+
 # [1.1.0](https://github.com/xqing7985/simplequant-ai/compare/v1.0.0...v1.1.0) (2026-03-16)
 
 
