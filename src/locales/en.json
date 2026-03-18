@@ -197,10 +197,11 @@
     }
   },
   "Data": {
-    "meta_title": "Data Center",
-    "meta_description": "Download sample data for quantitative research and analysis",
+    "meta_title": "Data Center - A-Share Qlib Data Download",
+    "meta_description": "Download sample data for quantitative research and analysis, including A-Share full Qlib format data with OHLC, volume, daily indicators and more.",
     "page_title": "Data Center",
     "page_description": "Download sample data for quantitative research, including daily market data, fundamental indicators, and factor data",
-    "download": "Download"
+    "download": "Download",
+    "back_to_list": "Back to Data List"
   }
 }

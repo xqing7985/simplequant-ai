@@ -197,10 +197,11 @@
     }
   },
   "Data": {
-    "meta_title": "数据中心",
-    "meta_description": "下载量化研究相关的示例数据、基础字段数据与因子样例数据",
+    "meta_title": "数据中心 - A 股 Qlib 数据下载",
+    "meta_description": "下载量化研究相关的示例数据、基础字段数据与因子样例数据，提供 A 股全量 Qlib 格式数据，包含开高低收、成交量、每日指标等完整字段。",
     "page_title": "数据中心",
     "page_description": "下载量化研究相关的示例数据、基础字段数据与因子样例数据",
-    "download": "下载"
+    "download": "下载",
+    "back_to_list": "返回数据列表"
   }
 }

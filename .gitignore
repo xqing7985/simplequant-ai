@@ -49,3 +49,6 @@ local
 
 # vercel
 .vercel
+
+# large download files
+public/downloads/*.zip
