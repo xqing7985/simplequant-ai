@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/xqing7985/simplequant-ai/compare/v1.3.0...v1.4.0) (2026-03-18)
+
+
+### Features
+
+* add Qlib data package and ignore large zip files ([dbd10a5](https://github.com/xqing7985/simplequant-ai/commit/dbd10a5fe2c2dd81407933c092c8820533df0252))
+
 # [1.3.0](https://github.com/xqing7985/simplequant-ai/compare/v1.2.0...v1.3.0) (2026-03-18)
 
 
