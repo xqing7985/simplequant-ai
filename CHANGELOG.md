@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/xqing7985/simplequant-ai/compare/v1.2.0...v1.3.0) (2026-03-18)
+
+
+### Features
+
+* **blog:** 为博客文章添加分类系统 ([9789f88](https://github.com/xqing7985/simplequant-ai/commit/9789f8806247792be61fbeb2bcd7a8deecdfcb00))
+
 # [1.2.0](https://github.com/xqing7985/simplequant-ai/compare/v1.1.1...v1.2.0) (2026-03-17)
 
 
