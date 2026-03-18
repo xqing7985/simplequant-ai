@@ -177,7 +177,24 @@
     "report_author": "Author",
     "report_date": "Date",
     "view_pdf": "View PDF",
-    "download_pdf": "Download PDF"
+    "download_pdf": "Download PDF",
+    "all_categories": "All Categories",
+    "categories": {
+      "quant_intro": "Quant Intro",
+      "programming_tools": "Programming & Tools",
+      "data_engineering": "Data & Engineering",
+      "factors_strategies": "Factors & Strategies",
+      "case_studies": "Case Studies",
+      "research_reports": "Research & Reports"
+    },
+    "category_descriptions": {
+      "quant_intro": "Cognitive and introductory content to help you understand the basics of quantitative investing",
+      "programming_tools": "Programming basics and tool usage, including Python, Pandas, backtesting tools, etc.",
+      "data_engineering": "Data acquisition, cleaning, and architecture, including Tushare, Qlib data preparation, etc.",
+      "factors_strategies": "Factor construction and strategy research, including Alpha101, multi-factor strategies, etc.",
+      "case_studies": "Hands-on practical content, including Qlib practice, RD-Agent practice, etc.",
+      "research_reports": "Research reports sharing and industry research, including external research interpretation"
+    }
   },
   "Data": {
     "meta_title": "Data Center",

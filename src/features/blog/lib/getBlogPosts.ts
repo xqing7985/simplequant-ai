@@ -42,6 +42,8 @@ export const getBlogPosts = cache(async (locale: string): Promise<BlogPost[]> =>
         coverImage: frontmatter.coverImage,
         locale,
         isPublished: frontmatter.isPublished,
+        // 分类字段
+        category: frontmatter.category,
         // 研报相关字段
         contentType: frontmatter.contentType,
         pdfUrl: frontmatter.pdfUrl,
@@ -91,6 +93,8 @@ export const getBlogPostBySlug = cache(async (
     locale,
     isPublished: frontmatter.isPublished,
     content: body,
+    // 分类字段
+    category: frontmatter.category,
     // 研报相关字段
     contentType: frontmatter.contentType,
     pdfUrl: frontmatter.pdfUrl,

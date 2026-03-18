@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
-import type { BlogPost } from '@/features/blog/types/blog';
+import type { BlogCategory, BlogPost } from '@/features/blog/types/blog';
 
 type BlogCardProps = {
   post: BlogPost;
@@ -9,6 +9,12 @@ type BlogCardProps = {
 
 export const BlogCard = ({ post }: BlogCardProps) => {
   const t = useTranslations('Blog');
+
+  // 分类标签映射函数（连字符转下划线）
+  const getCategoryLabel = (category: BlogCategory) => {
+    const key = category.replace(/-/g, '_') as keyof typeof t;
+    return t(`categories.${key}`);
+  };
 
   return (
     <article className="group overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-lg">
@@ -24,9 +30,15 @@ export const BlogCard = ({ post }: BlogCardProps) => {
 
       <div className="flex flex-col gap-4 p-6">
         <div className="flex flex-wrap gap-2">
+          {/* 分类标签 */}
+          {post.category && (
+            <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">
+              {getCategoryLabel(post.category)}
+            </span>
+          )}
           {/* 研报类型标识 */}
           {post.contentType === 'report' && (
-            <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">
+            <span className="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">
               {t('report_badge')}
             </span>
           )}

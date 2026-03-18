@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 
-import type { BlogPost } from '@/features/blog/types/blog';
+import type { BlogCategory, BlogPost } from '@/features/blog/types/blog';
 
 type BlogArticleProps = {
   post: BlogPost;
@@ -15,6 +15,12 @@ export const BlogArticle = ({ post, content }: BlogArticleProps) => {
   const t = useTranslations('Blog');
   const params = useParams<{ locale: string }>();
   const locale = params?.locale || 'zh';
+
+  // 分类标签映射函数（连字符转下划线）
+  const getCategoryLabel = (category: BlogCategory) => {
+    const key = category.replace(/-/g, '_') as keyof typeof t;
+    return t(`categories.${key}`);
+  };
 
   return (
     <article className="mx-auto max-w-3xl px-4 py-8">
@@ -40,9 +46,15 @@ export const BlogArticle = ({ post, content }: BlogArticleProps) => {
         </Link>
 
         <div className="mb-4 flex flex-wrap gap-2">
+          {/* 分类标签 */}
+          {post.category && (
+            <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">
+              {getCategoryLabel(post.category)}
+            </span>
+          )}
           {/* 研报类型标识 */}
           {post.contentType === 'report' && (
-            <span className="inline-flex items-center rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">
+            <span className="inline-flex items-center rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">
               {t('report_badge')}
             </span>
           )}

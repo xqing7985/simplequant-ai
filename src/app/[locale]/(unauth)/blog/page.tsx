@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 
-import { BlogCard } from '@/features/blog/components/BlogCard';
+import { BlogList } from '@/features/blog/components/BlogList';
 import { getBlogPosts } from '@/features/blog/lib/getBlogPosts';
 import { Section } from '@/features/landing/Section';
 
@@ -31,20 +31,7 @@ const BlogPage = async (props: { params: { locale: string } }) => {
       description={t('page_description')}
       className="min-h-screen"
     >
-      {posts.length > 0
-        ? (
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              {posts.map(post => (
-                <BlogCard key={post.slug} post={post} />
-              ))}
-            </div>
-          )
-        : (
-            <div className="py-12 text-center text-muted-foreground">
-              <p>暂无文章</p>
-              <p className="mt-2 text-sm">Coming soon...</p>
-            </div>
-          )}
+      <BlogList posts={posts} />
     </Section>
   );
 };

@@ -177,7 +177,24 @@
     "report_author": "作者",
     "report_date": "研报日期",
     "view_pdf": "查看 PDF",
-    "download_pdf": "下载 PDF"
+    "download_pdf": "下载 PDF",
+    "all_categories": "全部分类",
+    "categories": {
+      "quant_intro": "量化入门",
+      "programming_tools": "编程与工具",
+      "data_engineering": "数据与工程",
+      "factors_strategies": "因子与策略",
+      "case_studies": "实战案例",
+      "research_reports": "研究与研报"
+    },
+    "category_descriptions": {
+      "quant_intro": "认知类、入门类内容，帮助你了解量化投资的基础概念",
+      "programming_tools": "编程基础、工具使用，包括 Python、Pandas、回测工具等",
+      "data_engineering": "数据获取、清洗、架构，包括 Tushare、Qlib 数据准备等",
+      "factors_strategies": "因子构建、策略研究，包括 Alpha101、多因子策略等",
+      "case_studies": "落地实操内容，包括 Qlib 实战、RD-Agent 实战等",
+      "research_reports": "研报分享、行业研究，包括外部研究报告解读"
+    }
   },
   "Data": {
     "meta_title": "数据中心",
