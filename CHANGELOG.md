@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/xqing7985/simplequant-ai/compare/v1.4.0...v1.5.0) (2026-03-18)
+
+
+### Features
+
+* **blog:** 改成外链后面。现在支持MDX数学公式、表格和代码高亮渲染 ([3de4c6a](https://github.com/xqing7985/simplequant-ai/commit/3de4c6a919a4055627cfe01506543634d9ddce32))
+
 # [1.4.0](https://github.com/xqing7985/simplequant-ai/compare/v1.3.0...v1.4.0) (2026-03-18)
 
 
