@@ -19,6 +19,16 @@ const bundleAnalyzer = withBundleAnalyzer({
 /** @type {import('next').NextConfig} */
 export default withMDX({
   extension: /\.mdx?$/,
+  mdxOptions: {
+    remarkPlugins: [
+      (await import('remark-gfm')).default,
+      (await import('remark-math')).default,
+    ],
+    rehypePlugins: [
+      (await import('rehype-katex')).default,
+      (await import('rehype-highlight')).default,
+    ],
+  },
 })(
   withSentryConfig(
     bundleAnalyzer(

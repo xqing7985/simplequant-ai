@@ -1,4 +1,6 @@
 import '@/styles/global.css';
+// Import KaTeX styles for math formula rendering
+import 'katex/dist/katex.min.css';
 
 import type { Metadata } from 'next';
 import { NextIntlClientProvider, useMessages } from 'next-intl';

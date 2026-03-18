@@ -4,6 +4,20 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import { BlogArticle } from '@/features/blog/components/BlogArticle';
 import { getBlogPostBySlug } from '@/features/blog/lib/getBlogPosts';
 
+// MDX remote options with remark/rehype plugins for table, math, and code highlighting support
+const mdxRemoteOptions = {
+  mdxOptions: {
+    remarkPlugins: [
+      (await import('remark-gfm')).default,
+      (await import('remark-math')).default,
+    ],
+    rehypePlugins: [
+      (await import('rehype-katex')).default,
+      (await import('rehype-highlight')).default,
+    ],
+  },
+};
+
 export async function generateMetadata(props: {
   params: { locale: string; slug: string };
 }) {
@@ -43,7 +57,7 @@ const BlogPostPage = async (props: {
     notFound();
   }
 
-  return <BlogArticle post={post} content={<MDXRemote source={post.content} />} />;
+  return <BlogArticle post={post} content={<MDXRemote source={post.content} options={mdxRemoteOptions} />} />;
 };
 
 export default BlogPostPage;

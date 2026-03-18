@@ -86,3 +86,86 @@
     --tw-prose-code: hsl(var(--foreground));
   }
 }
+
+@layer components {
+  /* Blog article styles */
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    font-size: 0.875rem;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .prose table thead {
+    border-bottom: 2px solid hsl(var(--border));
+  }
+
+  .prose table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: hsl(var(--foreground));
+    border: 1px solid hsl(var(--border));
+  }
+
+  .prose table td {
+    padding: 0.75rem 1rem;
+    border: 1px solid hsl(var(--border));
+    color: hsl(var(--foreground));
+  }
+
+  .prose table tbody tr {
+    border-bottom: 1px solid hsl(var(--border));
+  }
+
+  .prose table tbody tr:hover {
+    background-color: hsl(var(--muted));
+  }
+
+  /* Code block styles */
+  .prose pre {
+    margin: 1.5rem 0;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+  }
+
+  .prose pre code {
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.7;
+    background-color: hsl(var(--muted));
+    color: hsl(var(--foreground));
+  }
+
+  .prose :not(pre) > code {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.875em;
+    background-color: hsl(var(--muted));
+    border-radius: 0.25rem;
+    color: hsl(var(--accent-foreground));
+  }
+
+  /* KaTeX math formula styles */
+  .katex-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1rem 0;
+  }
+
+  .katex {
+    font-size: 1.1em;
+  }
+
+  .prose .math-inline {
+    display: inline;
+  }
+
+  .prose .math-display {
+    display: block;
+    text-align: center;
+    margin: 1.5rem 0;
+  }
+}
