@@ -10,7 +10,9 @@
     "docs": "文档",
     "blog": "博客",
     "community": "社区",
-    "company": "公司"
+    "company": "公司",
+    "factors": "因子",
+    "data": "数据"
   },
   "Hero": {
     "follow_twitter": "关注 @Ixartz 的 Twitter",
@@ -203,5 +205,47 @@
     "page_description": "下载量化研究相关的示例数据、基础字段数据与因子样例数据",
     "download": "下载",
     "back_to_list": "返回数据列表"
+  },
+  "Factors": {
+    "meta_title": "因子库 - 量化因子研究平台",
+    "meta_description": "探索和管理量化研究因子，查看因子表现和去重结果",
+    "page_title": "因子库",
+    "page_description": "探索量化因子，查看研究表现和去重分析结果",
+    "search_placeholder": "搜索因子名称...",
+    "filter_category": "分类",
+    "filter_family": "因子族",
+    "filter_status": "最终状态",
+    "all_option": "全部",
+    "no_results": "没有找到匹配的因子",
+    "tabs": {
+      "performance": "研究表现",
+      "dedup": "去重与入库"
+    },
+    "metrics": {
+      "sample_count": "样本数量",
+      "date_count": "交易日数",
+      "valid_day_ratio": "有效交易日占比",
+      "ic_mean": "平均 IC",
+      "ic_std": "IC 标准差",
+      "icir": "IC IR",
+      "ic_positive_ratio": "IC 正比率",
+      "rank_ic_mean": "平均 Rank IC",
+      "rank_ic_std": "Rank IC 标准差",
+      "rank_icir": "Rank IC IR",
+      "rank_ic_positive_ratio": "Rank IC 正比率",
+      "monotonic_score": "单调性得分"
+    },
+    "labels": {
+      "factor_name": "因子名称",
+      "factor_expr": "因子表达式",
+      "category": "分类",
+      "family": "因子族",
+      "direction": "方向",
+      "score": "得分",
+      "status": "状态",
+      "final_status": "最终状态",
+      "neutralization": "中性化",
+      "neutralization_mode": "中性化模式"
+    }
   }
 }

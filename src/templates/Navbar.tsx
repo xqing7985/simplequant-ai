@@ -44,7 +44,7 @@ export const Navbar = () => {
           </>
         )}
       >
-        <ProductDropdown />
+        <ProductDropdown locale={locale} />
 
         <li>
           <Link href="/sign-up">{t('docs')}</Link>
@@ -66,7 +66,7 @@ export const Navbar = () => {
   );
 };
 
-function ProductDropdown() {
+function ProductDropdown({ locale }: { locale: string }) {
   const [open, setOpen] = React.useState(false);
   const t = useTranslations('Navbar');
 
@@ -91,7 +91,12 @@ function ProductDropdown() {
       >
         <DropdownMenuItem asChild className="cursor-pointer">
           <Link href="/data" className="flex w-full items-center py-2">
-            数据
+            {t('data')}
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuItem asChild className="cursor-pointer">
+          <Link href={`/${locale}/factors`} className="flex w-full items-center py-2">
+            {t('factors')}
           </Link>
         </DropdownMenuItem>
       </DropdownMenuContent>

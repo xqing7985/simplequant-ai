@@ -10,7 +10,9 @@
     "docs": "Docs",
     "blog": "Blog",
     "community": "Community",
-    "company": "Company"
+    "company": "Company",
+    "factors": "Factors",
+    "data": "Data"
   },
   "Hero": {
     "follow_twitter": "Follow @Ixartz on Twitter",
@@ -203,5 +205,47 @@
     "page_description": "Download sample data for quantitative research, including daily market data, fundamental indicators, and factor data",
     "download": "Download",
     "back_to_list": "Back to Data List"
+  },
+  "Factors": {
+    "meta_title": "Factor Library - Quantitative Factor Research Platform",
+    "meta_description": "Explore and manage quantitative research factors, view factor performance and deduplication results",
+    "page_title": "Factor Library",
+    "page_description": "Explore quantitative factors, view research performance and deduplication analysis results",
+    "search_placeholder": "Search factor name...",
+    "filter_category": "Category",
+    "filter_family": "Factor Family",
+    "filter_status": "Final Status",
+    "all_option": "All",
+    "no_results": "No matching factors found",
+    "tabs": {
+      "performance": "Research Performance",
+      "dedup": "Deduplication & Storage"
+    },
+    "metrics": {
+      "sample_count": "Sample Count",
+      "date_count": "Trading Days",
+      "valid_day_ratio": "Valid Day Ratio",
+      "ic_mean": "Mean IC",
+      "ic_std": "IC Std Dev",
+      "icir": "IC IR",
+      "ic_positive_ratio": "IC Positive Ratio",
+      "rank_ic_mean": "Mean Rank IC",
+      "rank_ic_std": "Rank IC Std Dev",
+      "rank_icir": "Rank IC IR",
+      "rank_ic_positive_ratio": "Rank IC Positive Ratio",
+      "monotonic_score": "Monotonicity Score"
+    },
+    "labels": {
+      "factor_name": "Factor Name",
+      "factor_expr": "Factor Expression",
+      "category": "Category",
+      "family": "Factor Family",
+      "direction": "Direction",
+      "score": "Score",
+      "status": "Status",
+      "final_status": "Final Status",
+      "neutralization": "Neutralization",
+      "neutralization_mode": "Neutralization Mode"
+    }
   }
 }

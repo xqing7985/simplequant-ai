@@ -1,0 +1,11 @@
+factor_name,hit_factor,pair_corr,overlap_samples,duplicate_with_library,max_corr_with_library,max_corr_factor_in_library,max_corr_overlap_with_library,drop_reason,final_status
+Momentum_1M,,,,,,,,,kept
+Value_EP,,,,,,,,,kept
+Size_LogMV,,,,,,,,,kept
+Volatility_20d,Volatility_1M,0.92,4800,true,0.92,Volatility_1M,4800，与已有因子高度相关，dropped
+Liquidity_Turnover,,,,,,,,,kept
+Quality_ROE,,,,,,,,,kept
+Growth_Revenue,,,,,,,pending,reviewing
+Mean_Reversion_5d,,,,,,,,,kept
+Analyst_Coverage,Analyst_Count,0.87,4200,true,0.87,Analyst_Count,4200，与已有因子高度相关，dropped
+Gap_Return,Gap_Up,0.78,3900,false,0.78,Gap_Up,3900,,kept
